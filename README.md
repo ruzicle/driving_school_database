@@ -8,12 +8,13 @@ This project focuses on the architectural design and implementation of a relatio
 ### Relational Schema
 ![Relational Schema](relational_schema.png)
 
-## Technical Highlights
-- **Schema Design:** Fully normalized database structure to ensure data integrity.
-- **Relational Integrity:** Extensive use of Primary and Foreign Keys (`ON DELETE CASCADE`) across 10+ tables.
-- **Business Logic:** Implemented PL/pgSQL triggers (e.g., `kontrola_limitu_zkousek`) to enforce rules like a 3-attempt exam limit.
-- **Analytical Querying:** Advanced SQL scripts for reporting instructor workload and student success rates.
+- ## Technical Focus
+- **Data Structure:** Design of 10+ tables with a focus on clean relationships.
+- **Relational Logic:** Using Foreign Keys and cascading deletes to keep data consistent.
+- **Automation:** A custom trigger to automatically handle the 3-attempt exam limit.
+- **Practical Queries:** SQL scripts for checking attendance and instructor workload.
 
 ## Repository Structure
-- `schema.sql`: Database structure, constraints, and triggers.
+- `create.sql`: Database structure, constraints, and triggers.
 - `queries.sql`: Practical examples of analytical queries.
+- `insert.sql`: Sample dataset for testing the environment.
